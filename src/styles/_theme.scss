@@ -1,0 +1,16 @@
+$darkmode: false;
+
+$black: #2E2E2E;
+$white: #F2F3F9;
+$primary: #84C7FF;
+
+@mixin themed-background {
+  @debug "I am #{&}";
+  @if $darkmode {
+    background-color: $black;
+    color: $white;
+  } @else {
+    background-color: $white;
+    color: $black;
+  }
+}
